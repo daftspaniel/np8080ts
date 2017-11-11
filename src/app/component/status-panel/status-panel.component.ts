@@ -9,11 +9,9 @@ import {TextprocessingService} from '../../services/textprocessingservice.servic
   encapsulation: ViewEncapsulation.None
 })
 export class StatusPanelComponent extends Np8080ComponentComponent implements OnInit {
-  textProcessingService: TextprocessingService;
 
-  constructor(private newTextprocessingService: TextprocessingService) {
-    super();
-    this.textProcessingService = newTextprocessingService;
+  constructor(newTextprocessingService: TextprocessingService) {
+    super(newTextprocessingService);
   }
 
   get length() {

@@ -6,6 +6,10 @@
   flex: 1;
   width: 95vw;
   height: 12px;
+  position: absolute;
+  bottom: 1px;
+  height: 10px;
+  padding: 8px;
 
   .rhsStatus {
     flex: 1;
@@ -13,6 +17,6 @@
   }
 
   .lhsStatus {
-    flex: 3;
+    flex: 0.5;
   }
 }
