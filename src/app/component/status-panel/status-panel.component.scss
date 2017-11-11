@@ -1,0 +1,18 @@
+.statusPanel {
+  background-color: #9ed3d9;
+  padding-left: 5px;
+  display: flex;
+  font-size: small;
+  flex: 1;
+  width: 95vw;
+  height: 12px;
+
+  .rhsStatus {
+    flex: 1;
+    text-align: right;
+  }
+
+  .lhsStatus {
+    flex: 3;
+  }
+}

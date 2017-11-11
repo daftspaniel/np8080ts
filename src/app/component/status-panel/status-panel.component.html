@@ -1,0 +1,6 @@
+<p class="statusPanel">
+  <span class="lhsStatus">Chars:{{length}}
+        Lines: {{lineCount}}
+        Words: {{wordCount}} &nbsp;</span>
+  <span class="rhsStatus" *ngIf="modified!=null">Mod: {{modified|  date:'mediumTime' | uppercase }}</span>
+</p>
