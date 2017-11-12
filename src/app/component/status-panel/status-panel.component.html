@@ -1,4 +1,4 @@
-<p class="statusPanel">
+<p class="statusPanel" [ngClass]="getBackgroundClass()">
   <span class="lhsStatus">Chars:{{length}}
         Lines: {{lineCount}}
         Words: {{wordCount}} &nbsp;</span>

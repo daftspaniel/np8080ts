@@ -3,6 +3,7 @@ import {BaseComponentComponent} from '../base-component/base-component.component
 import {TextDocument} from '../../document/document';
 import {TextprocessingService} from '../../services/textprocessingservice.service';
 import {templateVisitAll} from "@angular/compiler";
+import {ThemeService} from '../../services/theme.service';
 
 @Component({
   selector: 'app-np8080-component',
@@ -13,8 +14,9 @@ import {templateVisitAll} from "@angular/compiler";
 export class Np8080ComponentComponent extends BaseComponentComponent implements OnInit {
   textProcessingService: TextprocessingService;
 
-  constructor(private newTextprocessingService: TextprocessingService) {
-    super();
+  constructor(private newTextprocessingService: TextprocessingService,
+              private  newThemeService: ThemeService) {
+    super(newThemeService);
     this.textProcessingService = this.newTextprocessingService;
   }
 

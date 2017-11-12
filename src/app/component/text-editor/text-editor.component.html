@@ -1,5 +1,6 @@
 <div class="editor">
   <textarea [ngStyle]="{width: showPreview ? '47%':'calc(100% - 18px)'}"
             [(ngModel)]="note.text"
+            [ngClass]="getDocumentClass()+' '+getBorderClass()"
             (keyup)="changeHandler()">text-editor works!</textarea>
 </div>

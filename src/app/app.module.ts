@@ -9,6 +9,7 @@ import { StatusPanelComponent } from './component/status-panel/status-panel.comp
 import { BaseComponentComponent } from './component/base-component/base-component.component';
 import { Np8080ComponentComponent } from './component/np8080-component/np8080-component.component';
 import {TextprocessingService} from './services/textprocessingservice.service';
+import {ThemeService} from './services/theme.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import {TextprocessingService} from './services/textprocessingservice.service';
   imports: [
     BrowserModule, FormsModule
   ],
-  providers: [TextprocessingService],
+  providers: [TextprocessingService, ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
