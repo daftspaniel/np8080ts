@@ -24,8 +24,9 @@ export class BaseComponentComponent implements OnInit {
     this.showComponent = false;
   }
 
-  // String get display => showComponent ? 'block' : 'none';
-  // String getBorderClass() => themeService.borderClass;
+  get display() {
+    return this.showComponent ? 'block' : 'none';
+  }
 
   getBorderClass(): string {
     return this.themeService.borderClass;
@@ -37,6 +38,10 @@ export class BaseComponentComponent implements OnInit {
 
   getDocumentClass(): string {
     return this.themeService.documentClass;
+  }
+
+  getClass(): string {
+    return this.themeService.mainClass;
   }
 
   ngOnInit() {

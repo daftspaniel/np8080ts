@@ -32,8 +32,6 @@ export class StatusPanelComponent extends Np8080ComponentComponent implements On
     return this.textProcessingService.getLineCount(this.note.text);
   }
 
-  // String get wordCount => textProcessingService.getWordCount(text).toString();
-
   ngOnInit() {
   }
 

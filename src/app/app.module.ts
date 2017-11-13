@@ -10,6 +10,8 @@ import { BaseComponentComponent } from './component/base-component/base-componen
 import { Np8080ComponentComponent } from './component/np8080-component/np8080-component.component';
 import {TextprocessingService} from './services/textprocessingservice.service';
 import {ThemeService} from './services/theme.service';
+import { ToolbarPanelComponent } from './component/toolbar-panel/toolbar-panel.component';
+import { MenuComponent } from './component/toolbar-panel/menu/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import {ThemeService} from './services/theme.service';
     TextEditorComponent,
     StatusPanelComponent,
     BaseComponentComponent,
-    Np8080ComponentComponent
+    Np8080ComponentComponent,
+    ToolbarPanelComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule, FormsModule

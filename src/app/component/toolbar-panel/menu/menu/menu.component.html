@@ -1,0 +1,18 @@
+<div (mouseenter)="show()" (mouseleave)="close()" style="z-index: 999;" class="toolbar-menu">
+  <button class="toolbarMenu" [ngClass]="getClass()">{{menutitle}}</button>
+
+  <div class="menuItem" [ngStyle]="{'display':  display, 'width':'130px'}" [ngClass]="getBorderClass()">
+      <span *ngFor="let menuItem of items">
+            <button
+              class="toolbarButton toolbarMenuButton"
+              [ngClass]="getMenuClass()"
+              (click)="menuClick(menuItem.handler)"
+              title="{{menuItem.tooltip}}">{{menuItem.name}}
+            </button>
+            <div *ngIf="menuItem.separator" class="menuSeparator" [ngClass]="getBorderClass()">&nbsp;</div>
+        </span>
+  </div>
+
+  <div class="menuFooter" [ngClass]="getFooterClass()"
+       [ngStyle]="{'display':  display, 'width':'130px'}">&nbsp;</div>
+</div>
