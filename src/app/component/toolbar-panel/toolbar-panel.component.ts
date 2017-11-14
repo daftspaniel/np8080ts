@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {ThemeService} from '../../services/theme.service';
-import {TextprocessingService} from '../../services/textprocessingservice.service';
+import {TextprocessingService} from '../../services/textprocessing.service';
 import {Np8080ComponentComponent} from '../np8080-component/np8080-component.component';
 import {MenuDefinition} from './menu';
 

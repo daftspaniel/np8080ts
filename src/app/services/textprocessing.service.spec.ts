@@ -1,6 +1,6 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { TextprocessingService } from './textprocessingservice.service';
+import { TextprocessingService } from './textprocessing.service';
 
 describe('TextprocessingService', () => {
   beforeEach(() => {

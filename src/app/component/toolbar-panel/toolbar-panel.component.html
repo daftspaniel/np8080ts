@@ -1,4 +1,4 @@
-<p class="toolbar" [ngClass]="getClass()">
+<div class="toolbar" [ngClass]="getClass()">
 
   <app-menu [menutitle]="'⚛ Start'" [items]="menus.startMenuItems" class="toolbarMenuTitle menuInit"></app-menu>
   <app-menu [menutitle]="'&#9881; Modify'" [items]="menus.modifyMenuItems"  class="toolbarMenuTitle menuModify"></app-menu>
@@ -6,9 +6,9 @@
   <app-menu [menutitle]="'- Remove'" class="toolbarMenuTitle menuRemove"></app-menu>
   <app-menu [menutitle]="'# Advanced'" class="toolbarMenuTitle menuAdvanced"></app-menu>
   <app-menu [menutitle]="'&#x1f440; View'" class="toolbarMenuTitle menuView"></app-menu>
-  <app-menu [menutitle]="'? Help'" class="toolbarMenuTitle menuHelp"></app-menu>
+  <app-menu [menutitle]="'? Help'" [items]="menus.helpMenuItems" class="toolbarMenuTitle menuHelp"></app-menu>
 
   <button class="wideToolbarButton" (click)="downloadHandler()" title="Download">&#11015; Download</button>
   <button class="wideToolbarButton" (click)="undoHandler()" title="Undo previous change.">&#8617; Undo</button>
 
-</p>
+</div>

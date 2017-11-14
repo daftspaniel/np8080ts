@@ -1,49 +1,4 @@
 .toolbar-menu {
-  //z-index: 1000;
-  //background-color: #eee862;
-
-  //
-  //.menuModify {
-  //  width: 110px;
-  //  height: 30px;
-  //  z-index: 1000;
-  //}
-  //
-  //.menuAdd {
-  //  width: 110px;
-  //
-  //  height: 30px;
-  //  z-index: 1000;
-  //}
-  //
-  //.menuRemove {
-  //  left: 530px;
-  //  width: 110px;
-  //  height: 30px;
-  //  z-index: 1000;
-  //}
-  //
-  //.menuAdvanced {
-  //  left: 630px;
-  //  width: 110px;
-  //  height: 30px;
-  //  z-index: 1000;
-  //}
-  //
-  //.menuView {
-  //  left: 730px;
-  //  width: 110px;
-  //  height: 30px;
-  //  z-index: 1000;
-  //}
-  //
-  //.menuHelp {
-  //  left: 830px;
-  //  width: 110px;
-  //  height: 30px;
-  //  z-index: 1000;
-  //}
-  //
   .toolbarMenu {
     border: 1px;
     margin: 0px;
@@ -51,7 +6,21 @@
     min-width: 100px;
     font-size: 10pt;
   }
-  //
+  .toolbarButton {
+    border: 0px;
+    margin: 0px;
+    height: 25px;
+    text-align: left;
+    font-size: 10pt;
+    min-width: 130px;
+    margin-left: 12px;
+  }
+
+  .toolbarMenuButton {
+    margin-left: 0px;
+    padding-left: 5px;
+  }
+
   .menuSeparator {
     width: 130px;
     height: 0px;
@@ -59,12 +28,6 @@
     margin: 0px;
     border-bottom: solid 1px red;
   }
-  //
-  //.roundButton {
-  //  border-radius: 4px;
-  //}
-  //
-
 
   .menuItem {
     z-index: 999;
@@ -80,4 +43,5 @@
     border-top: 0px;
     height: 5px;
   }
+
 }

@@ -1,6 +1,10 @@
 .editor {
   background-color: aliceblue;
 
+  flex: 2;
+  overflow: none;
+  height: calc(100vh - 22px);
+
   textarea {
     font-size: 10pt;
     border: 1px solid;

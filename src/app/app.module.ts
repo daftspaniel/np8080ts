@@ -8,10 +8,11 @@ import { TextEditorComponent } from './component/text-editor/text-editor.compone
 import { StatusPanelComponent } from './component/status-panel/status-panel.component';
 import { BaseComponentComponent } from './component/base-component/base-component.component';
 import { Np8080ComponentComponent } from './component/np8080-component/np8080-component.component';
-import {TextprocessingService} from './services/textprocessingservice.service';
+import {TextprocessingService} from './services/textprocessing.service';
 import {ThemeService} from './services/theme.service';
 import { ToolbarPanelComponent } from './component/toolbar-panel/toolbar-panel.component';
 import { MenuComponent } from './component/toolbar-panel/menu/menu/menu.component';
+import { AboutDialogComponent } from './dialog/about/about-dialog/about-dialog.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MenuComponent } from './component/toolbar-panel/menu/menu/menu.componen
     BaseComponentComponent,
     Np8080ComponentComponent,
     ToolbarPanelComponent,
-    MenuComponent
+    MenuComponent,
+    AboutDialogComponent
   ],
   imports: [
     BrowserModule, FormsModule

@@ -1,7 +1,7 @@
 import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
 import {BaseComponentComponent} from '../base-component/base-component.component';
 import {TextDocument} from '../../document/document';
-import {TextprocessingService} from '../../services/textprocessingservice.service';
+import {TextprocessingService} from '../../services/textprocessing.service';
 import {templateVisitAll} from "@angular/compiler";
 import {ThemeService} from '../../services/theme.service';
 

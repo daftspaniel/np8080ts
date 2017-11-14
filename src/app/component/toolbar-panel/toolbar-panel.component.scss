@@ -1,14 +1,15 @@
 .toolbar {
-  background-color: #9ed3d9;
-  border-bottom: solid 1px #606993;
   display: flex;
+  //  background-color: #9ed3d9;
+  //border-bottom: solid 1px #606993;
   height: 30px;
-  margin-right: -12px;
-  margin-bottom: 0px;
-  padding: 1px;
-  width: 110%;
+  //margin-right: -12px;
+  //margin-bottom: 0px;
+  //padding: 1px;
+  //width: 110%;
 
   .toolbarMenuTitle {
+    //background-color: yellow;
     margin: 0px;
     margin-top: 5px;
 
@@ -16,15 +17,84 @@
     padding-left: 3px;
     z-index: 99;
   }
-
-  .toolbarMenuButton {
-    margin-left: 0px;
-    padding-left: 5px;
-  }
+  //
+  //.toolbarMenuButton {
+  //  //margin-left: 0px;
+  //  //padding-left: 5px;
+  //}
 
   .menuInit {
     width: 110px;
     height: 30px;
     z-index: 10010;
+  }
+  .menuModify {
+    width: 110px;
+    height: 30px;
+    z-index: 1000;
+  }
+
+  .menuAdd {
+    width: 110px;
+
+    height: 30px;
+    z-index: 1000;
+  }
+
+  .menuRemove {
+    left: 530px;
+    width: 110px;
+    height: 30px;
+    z-index: 1000;
+  }
+
+  .menuAdvanced {
+    left: 630px;
+    width: 110px;
+    height: 30px;
+    z-index: 1000;
+  }
+
+  .menuView {
+    left: 730px;
+    width: 110px;
+    height: 30px;
+    z-index: 1000;
+  }
+
+  .menuHelp {
+    left: 830px;
+    width: 110px;
+    height: 30px;
+    z-index: 1000;
+  }
+
+  .wideToolbarButton {
+    width: 95px;
+    color: #9ed3d9;
+    background-color: #2B2926;
+    border: 0px;
+    margin: 0px;
+    height: 26px;
+    text-align: center;
+    font-size: 10pt;
+    min-width: 40px;
+    border-radius: 4px;
+    margin-top: 2px;
+    margin-right: 5px;
+  }
+
+  .undoToolbarButton {
+    margin: 0px;
+    margin-top: 2px;
+    width: 40px;
+    color: darkgray;
+    background-color: #2B2926;
+    border: 0px;
+    height: 26px;
+    text-align: center;
+    font-size: 9pt;
+    min-width: 4px;
+    border-radius: 4px;
   }
 }

@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {Np8080ComponentComponent} from '../np8080-component/np8080-component.component';
-import {TextprocessingService} from '../../services/textprocessingservice.service';
+import {TextprocessingService} from '../../services/textprocessing.service';
 import {ThemeService} from '../../services/theme.service';
 
 @Component({
