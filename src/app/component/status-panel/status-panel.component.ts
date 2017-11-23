@@ -2,6 +2,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {Np8080ComponentComponent} from '../np8080-component/np8080-component.component';
 import {TextprocessingService} from '../../services/textprocessing.service';
 import {ThemeService} from '../../services/theme.service';
+import {EventbusService} from '../../services/eventbus.service';
 
 @Component({
   selector: 'app-status-panel',
@@ -12,8 +13,9 @@ import {ThemeService} from '../../services/theme.service';
 export class StatusPanelComponent extends Np8080ComponentComponent implements OnInit {
 
   constructor(newTextprocessingService: TextprocessingService,
-              newThemeService: ThemeService) {
-    super(newTextprocessingService, newThemeService);
+              newThemeService: ThemeService,
+              newEventBusService: EventbusService) {
+    super(newTextprocessingService, newThemeService, newEventBusService);
   }
 
   get length() {

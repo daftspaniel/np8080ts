@@ -2,6 +2,7 @@ import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
 import {ThemeService} from '../../../../services/theme.service';
 import {Menu} from '../../menu';
 import {BaseComponentComponent} from '../../../base-component/base-component.component';
+import {EventbusService} from '../../../../services/eventbus.service';
 
 @Component({
   selector: 'app-menu',
@@ -17,8 +18,8 @@ export class MenuComponent extends BaseComponentComponent implements OnInit {
   @Input('items')
   items: Array<Menu>;
 
-  constructor(newThemeService: ThemeService) {
-    super(newThemeService);
+  constructor(newThemeService: ThemeService, newEventBusService: EventbusService) {
+    super(newThemeService, newEventBusService);
   }
 
   ngOnInit() {
@@ -37,7 +38,8 @@ export class MenuComponent extends BaseComponentComponent implements OnInit {
   }
 
   menuClick(handler) {
-    close();
+    // this.close();
+    console.log(handler);
     handler();
   }
 

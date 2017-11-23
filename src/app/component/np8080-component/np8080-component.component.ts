@@ -4,6 +4,7 @@ import {TextDocument} from '../../document/document';
 import {TextprocessingService} from '../../services/textprocessing.service';
 import {templateVisitAll} from "@angular/compiler";
 import {ThemeService} from '../../services/theme.service';
+import {EventbusService} from '../../services/eventbus.service';
 
 @Component({
   selector: 'app-np8080-component',
@@ -14,10 +15,11 @@ import {ThemeService} from '../../services/theme.service';
 export class Np8080ComponentComponent extends BaseComponentComponent implements OnInit {
   textProcessingService: TextprocessingService;
 
-  constructor(private newTextprocessingService: TextprocessingService,
-              private  newThemeService: ThemeService) {
-    super(newThemeService);
-    this.textProcessingService = this.newTextprocessingService;
+  constructor(newTextprocessingService: TextprocessingService,
+              newThemeService: ThemeService,
+              newEventBusService: EventbusService) {
+    super(newThemeService, newEventBusService);
+    this.textProcessingService = newTextprocessingService;
   }
 
   @Input()

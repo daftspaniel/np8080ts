@@ -3,6 +3,7 @@ import {ThemeService} from '../../services/theme.service';
 import {TextprocessingService} from '../../services/textprocessing.service';
 import {Np8080ComponentComponent} from '../np8080-component/np8080-component.component';
 import {MenuDefinition} from './menu';
+import {EventbusService} from '../../services/eventbus.service';
 
 @Component({
   selector: 'app-toolbar-panel',
@@ -15,8 +16,9 @@ export class ToolbarPanelComponent extends Np8080ComponentComponent implements O
   menus: MenuDefinition = new MenuDefinition();
 
   constructor(newTextprocessingService: TextprocessingService,
-              newThemeService: ThemeService) {
-    super(newTextprocessingService, newThemeService);
+              newThemeService: ThemeService,
+              newEventBusService: EventbusService) {
+    super(newTextprocessingService, newThemeService, newEventBusService);
     this.menus.buildMenus(this);
   }
 
@@ -29,4 +31,10 @@ export class ToolbarPanelComponent extends Np8080ComponentComponent implements O
 
   undoHandler() {
   }
+
+  showAbout() {
+    console.log('Posting');
+    this.eventBusService.post('ShowAboutDialog');
+  }
+
 }

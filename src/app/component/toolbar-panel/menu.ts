@@ -24,6 +24,7 @@ export class MenuDefinition {
   helpMenuItems: Array<Menu> = [];
 
   buildMenus(toolbar: ToolbarPanelComponent) {
+    console.log('toolbar', toolbar);
     this.startMenuItems.push(new Menu('Clear Text', 'Start again with an empty file.', this.dummy));
     this.startMenuItems.push(new Menu('Welcome Text', 'Put sample text into the file.', this.dummy));
     this.startMenuItems.push(new Menu('Markdown', 'Put sample Markdown into the file.', this.dummy));
@@ -38,7 +39,9 @@ export class MenuDefinition {
     this.modifyMenuItems.push(new Menu('Sort A-Z', 'Alphabetically sort lines.', this.dummy));
     this.modifyMenuItems.push(new Menu('Number', 'Number non-blank lines.', this.dummy));
 
-    this.helpMenuItems.push(new Menu('About', 'Find out more about NP8080.', this.dummy));
+    this.helpMenuItems.push(new Menu('About', 'Find out more about NP8080.', () => {
+      toolbar.showAbout();
+    }));
     this.helpMenuItems.push(new Menu('Manual', 'Read the NP8080 manual.', this.dummy, true));
     this.helpMenuItems.push(new Menu('What\'s New?', 'Find out what\'s changed! - Hosted on Github.com.', this.dummy, true));
     this.helpMenuItems.push(new Menu('GitHub', 'Get the source code - Hosted on Github.com.', this.dummy));
@@ -49,4 +52,5 @@ export class MenuDefinition {
   dummy() {
     alert('test');
   }
+
 }

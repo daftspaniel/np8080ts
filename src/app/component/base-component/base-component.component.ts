@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {ThemeService} from '../../services/theme.service';
+import {EventbusService} from '../../services/eventbus.service';
 
 @Component({
   selector: 'app-base-component',
@@ -10,18 +11,23 @@ import {ThemeService} from '../../services/theme.service';
 export class BaseComponentComponent implements OnInit {
 
   themeService: ThemeService;
+  eventBusService: EventbusService;
   showComponent = false;
 
-  constructor(newThemeService: ThemeService) {
+  constructor(newThemeService: ThemeService,
+              newEventBusService: EventbusService) {
     this.themeService = newThemeService;
+    this.eventBusService = newEventBusService;
   }
 
   show() {
     this.showComponent = true;
+    console.log('show comp');
   }
 
   close() {
     this.showComponent = false;
+    console.log('close comp');
   }
 
   get display() {
@@ -42,6 +48,10 @@ export class BaseComponentComponent implements OnInit {
 
   getClass(): string {
     return this.themeService.mainClass;
+  }
+
+  getHeaderClass(): string {
+    return this.themeService.secondaryClass;
   }
 
   ngOnInit() {

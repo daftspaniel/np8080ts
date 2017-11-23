@@ -2,6 +2,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {Np8080ComponentComponent} from '../np8080-component/np8080-component.component';
 import {TextprocessingService} from '../../services/textprocessing.service';
 import {ThemeService} from '../../services/theme.service';
+import {EventbusService} from '../../services/eventbus.service';
 
 @Component({
   selector: 'app-text-editor',
@@ -13,8 +14,10 @@ export class TextEditorComponent extends Np8080ComponentComponent implements OnI
 
   showPreview = false;
 
-  constructor(newTextprocessingService: TextprocessingService, newThemeService: ThemeService) {
-    super(newTextprocessingService, newThemeService);
+  constructor(newTextprocessingService: TextprocessingService,
+              newThemeService: ThemeService,
+              newEventBusService: EventbusService) {
+    super(newTextprocessingService, newThemeService, newEventBusService);
   }
 
   ngOnInit() {

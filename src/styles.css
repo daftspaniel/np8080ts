@@ -95,3 +95,67 @@ html, body {
 .umate-border {
   border-color: #9d9d9d !important;
 }
+
+#overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1000;
+  background: transparent;
+}
+
+.fullScreenViewPanel {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1000;
+}
+
+#overlay .dialogPanel {
+  font-size: smaller;
+  width: 700px;
+  margin: 100px auto;
+  border: 1px solid whitesmoke;
+  text-align: center;
+}
+.closeCross {
+  float: right;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px;
+  margin-top: 2px;
+  margin-right: 2px;
+  background-color: #a20c12;
+  color: blanchedalmond;
+  text-align: center;
+  width: 18px;
+  border-radius: 3px;
+}
+
+.closeTextButton {
+  float: right;
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 3px;
+  margin-top: 2px;
+  margin-right: 32px;
+  color: #a09482;
+  border-radius: 7px;
+  background: transparent;
+  border: 1px solid silver;
+}
+.closeButton {
+  width: 80px;
+  background-color: blanchedalmond;
+  border: 0px;
+  margin: 0px;
+  font-weight: bold;
+  height: 25px;
+  box-shadow: 2px 2px 2px #888888;
+}
