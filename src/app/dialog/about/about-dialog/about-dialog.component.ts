@@ -2,7 +2,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {BaseComponentComponent} from '../../../component/base-component/base-component.component';
 import {ThemeService} from '../../../services/theme.service';
 import {EventbusService} from '../../../services/eventbus.service';
-
+import {Resources} from '../../../resources/resources';
 @Component({
   selector: 'app-about-dialog',
   templateUrl: './about-dialog.component.html',
@@ -23,7 +23,6 @@ export class AboutDialogComponent extends BaseComponentComponent implements OnIn
 
   ngOnInit() {
     this.showComponent = false;
-    this.aboutText = 'Hello';
+    this.aboutText = new Resources().welcomeText;
   }
-
 }

@@ -14,6 +14,7 @@ import {ToolbarPanelComponent} from './component/toolbar-panel/toolbar-panel.com
 import {MenuComponent} from './component/toolbar-panel/menu/menu/menu.component';
 import {AboutDialogComponent} from './dialog/about/about-dialog/about-dialog.component';
 import {EventbusService} from './services/eventbus.service';
+import { EditableLabelComponent } from './component/editable-label/editable-label.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {EventbusService} from './services/eventbus.service';
     Np8080ComponentComponent,
     ToolbarPanelComponent,
     MenuComponent,
-    AboutDialogComponent
+    AboutDialogComponent,
+    EditableLabelComponent
   ],
   imports: [
     BrowserModule, FormsModule
