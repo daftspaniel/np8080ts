@@ -3,7 +3,7 @@ import {NPStorage} from '../storage/storage';
 export class TextDocument {
   id: number;
   text = 'Default document text.';
-  downloadName = '';
+  downloadName = 'TEST.DOC';
 
   lastModified: string;
   storage: NPStorage = new NPStorage();

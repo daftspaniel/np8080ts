@@ -1,0 +1,29 @@
+.edit-label {
+
+  .edit-label-textbox {
+    background-color: beige;
+    width: 100%;
+    border: 0;
+    padding: 0;
+  }
+
+  .label {
+    width: calc(100% - 15px);
+    display: inline-block
+  }
+
+  .labelReadOnly {
+    top: 0px;
+    left: 2px;
+    font-size: small;
+    max-width: 180px;
+
+    background-color: #8FABBC;
+    padding: 5px;
+    padding-left: 15px;
+    text-align: left;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+
+  }
+}

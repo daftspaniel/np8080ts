@@ -1,4 +1,4 @@
-<div style="text-align:center">
+<div [ngClass]="themeService.tertiaryClass">
   <app-toolbar-panel></app-toolbar-panel>
   <app-editable-label [text]="note1.downloadName" [id]="note1.id"></app-editable-label>
   <app-text-editor [note]="note1"></app-text-editor>
